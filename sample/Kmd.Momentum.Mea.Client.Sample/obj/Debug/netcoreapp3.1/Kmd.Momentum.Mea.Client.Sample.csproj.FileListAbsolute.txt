@@ -1,0 +1,12 @@
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.exe
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.deps.json
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.runtimeconfig.json
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.runtimeconfig.dev.json
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.dll
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.pdb
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.csprojAssemblyReference.cache
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.AssemblyInfoInputs.cache
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.AssemblyInfo.cs
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.dll
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.pdb
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.genruntimeconfig.cache

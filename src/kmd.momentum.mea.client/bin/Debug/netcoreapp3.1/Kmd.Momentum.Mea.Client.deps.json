@@ -1,0 +1,117 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Kmd.Momentum.Mea.Client/1.0.1": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.9.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.21",
+          "Newtonsoft.Json": "12.0.3",
+          "StyleCop.Analyzers": "1.1.118"
+        },
+        "runtime": {
+          "Kmd.Momentum.Mea.Client.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "2.9.2",
+          "Microsoft.CodeQuality.Analyzers": "2.9.2",
+          "Microsoft.NetCore.Analyzers": "2.9.2",
+          "Microsoft.NetFramework.Analyzers": "2.9.2"
+        }
+      },
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.2": {},
+      "Microsoft.CodeQuality.Analyzers/2.9.2": {},
+      "Microsoft.NetCore.Analyzers/2.9.2": {},
+      "Microsoft.NetFramework.Analyzers/2.9.2": {},
+      "Microsoft.Rest.ClientRuntime/2.3.21": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.21.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {}
+    }
+  },
+  "libraries": {
+    "Kmd.Momentum.Mea.Client/1.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/FET7my2lb3TfKZwP0VipAH19N8y2p7CRGLIxtRYXaBBpOoG0fDCWvF8IaOtipcgZ8/xFmFqVVxjmdEeZFEBBw==",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.2",
+      "hashPath": "microsoft.codeanalysis.fxcopanalyzers.2.9.2.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CqOQrIghQLgd+qS6fv/DcL1//9c142npvQ0VrdHFO30hA6zBs1M+alLXsNM2VzqKTvXhSOQbj8/pZ8Wel2itcw==",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.2",
+      "hashPath": "microsoft.codeanalysis.versioncheckanalyzer.2.9.2.nupkg.sha512"
+    },
+    "Microsoft.CodeQuality.Analyzers/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RXI6ymLMEjxEFBaDFYDj0K5PdfEQETqxEv1Gum6ieL0BHPqsre2po+X8Dq2FnL/5b2mESxNtgRX/rhwGlD7MFQ==",
+      "path": "microsoft.codequality.analyzers/2.9.2",
+      "hashPath": "microsoft.codequality.analyzers.2.9.2.nupkg.sha512"
+    },
+    "Microsoft.NetCore.Analyzers/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SLCvjexhfwWzlyHYDQ6zMAOgC0gXTLe4kc02LhZ4GTqx7HQ7FXwX1DZrcFZ4AGYLqjCAvJKPpxBF+4jxh1rdkQ==",
+      "path": "microsoft.netcore.analyzers/2.9.2",
+      "hashPath": "microsoft.netcore.analyzers.2.9.2.nupkg.sha512"
+    },
+    "Microsoft.NetFramework.Analyzers/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EPRERBljfESjfx/DFCzqAVwkVu2bqvbX79/CxcAEpQiVIFjfdqwC9wkdtg/3lM4xshG4DZfaUwH/RkR8hbchsQ==",
+      "path": "microsoft.netframework.analyzers/2.9.2",
+      "hashPath": "microsoft.netframework.analyzers.2.9.2.nupkg.sha512"
+    },
+    "Microsoft.Rest.ClientRuntime/2.3.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KDYlgTyO693V6pi6SGk9eg+dDvKjuOgmkapbHdpnB1SmTPKpvWxVLIMyARJsCFLfB6axyURUJHOfvxBQ0yJKeg==",
+      "path": "microsoft.rest.clientruntime/2.3.21",
+      "hashPath": "microsoft.rest.clientruntime.2.3.21.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
+    }
+  }
+}

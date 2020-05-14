@@ -1,0 +1,10 @@
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.deps.json
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.csproj.CoreCompileInputs.cache
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfoInputs.cache
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfo.cs
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml
+D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb

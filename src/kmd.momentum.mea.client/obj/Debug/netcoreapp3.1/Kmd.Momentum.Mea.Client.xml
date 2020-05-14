@@ -1,0 +1,3507 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kmd.Momentum.Mea.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Kmd.Momentum.Mea.Client.IInternalClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.IInternalClient.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.IInternalClient.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.IInternalClient.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.IInternalClient.Credentials">
+            <summary>
+            Subscription credentials which uniquely identify client
+            subscription.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetAllCaseworkersWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all the  caseworkers
+            </summary>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum
+            Value is 0
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetCaseworkerByIdWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get caseworkers in Momentum with ID
+            </summary>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetTasksbyCaseworkerWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all tasks for the caseworkers
+            </summary>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum
+            Value is 0
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetAllActiveCitizensWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all active citizens
+            </summary>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum
+            Value is 1
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetCitizenByCprWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by CPR
+            </summary>
+            <param name='cprNumber'>
+            The CPR number to search the record in the Core system
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.GetCitizenByIdWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by ID
+            </summary>
+            <param name='citizenId'>
+            The Citizen ID or Momentum Id to search the record in the Core
+            system
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.CreateJournalNoteWithHttpMessagesAsync(Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create a Journal Note with attachment
+            </summary>
+            <param name='body'>
+            The requestmodel to save as a journal note record, in the Core
+            system
+            </param>
+            <param name='momentumCitizenId'>
+            The MomentumCitizenID or CitizenId to Create the journal note
+            record in the Core system
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.HealthReadyWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.HealthLiveWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.IInternalClient.UpdateTaskStatusWithHttpMessagesAsync(Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Update Status
+            </summary>
+            <param name='body'>
+            The request model to update task in the Core system
+            </param>
+            <param name='taskId'>
+            The TaskId to update the task in the Core system
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.InternalClient.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.InternalClient.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.InternalClient.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.InternalClient.Credentials">
+            <summary>
+            Subscription credentials which uniquely identify client subscription.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='httpClient'>
+            HttpClient to be used
+            </param>
+            <param name='disposeHttpClient'>
+            True: will dispose the provided httpClient on calling InternalClient.Dispose(). False: will not dispose provided httpClient</param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='httpClient'>
+            HttpClient to be used
+            </param>
+            <param name='disposeHttpClient'>
+            True: will dispose the provided httpClient on calling InternalClient.Dispose(). False: will not dispose provided httpClient</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the InternalClient class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='credentials'>
+            Required. Subscription credentials which uniquely identify client subscription.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.Initialize">
+            <summary>
+            Initializes client properties.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetAllCaseworkersWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all the  caseworkers
+            </summary>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetCaseworkerByIdWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get caseworkers in Momentum with ID
+            </summary>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetTasksbyCaseworkerWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all tasks for the caseworkers
+            </summary>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetAllActiveCitizensWithHttpMessagesAsync(System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get all active citizens
+            </summary>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 1
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetCitizenByCprWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by CPR
+            </summary>
+            <param name='cprNumber'>
+            The CPR number to search the record in the Core system
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.GetCitizenByIdWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by ID
+            </summary>
+            <param name='citizenId'>
+            The Citizen ID or Momentum Id to search the record in the Core system
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.CreateJournalNoteWithHttpMessagesAsync(Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Create a Journal Note with attachment
+            </summary>
+            <param name='body'>
+            The requestmodel to save as a journal note record, in the Core system
+            </param>
+            <param name='momentumCitizenId'>
+            The MomentumCitizenID or CitizenId to Create the journal note record in the
+            Core system
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.HealthReadyWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.HealthLiveWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClient.UpdateTaskStatusWithHttpMessagesAsync(Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Update Status
+            </summary>
+            <param name='body'>
+            The request model to update task in the Core system
+            </param>
+            <param name='taskId'>
+            The TaskId to update the task in the Core system
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Kmd.Momentum.Mea.Client.InternalClientExtensions">
+            <summary>
+            Extension methods for InternalClient.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetAllCaseworkers(Kmd.Momentum.Mea.Client.IInternalClient,System.Nullable{System.Int32})">
+            <summary>
+            Get all the  caseworkers
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetAllCaseworkersAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Get all the  caseworkers
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCaseworkerById(Kmd.Momentum.Mea.Client.IInternalClient,System.String)">
+            <summary>
+            Get caseworkers in Momentum with ID
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCaseworkerByIdAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get caseworkers in Momentum with ID
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetTasksbyCaseworker(Kmd.Momentum.Mea.Client.IInternalClient,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Get all tasks for the caseworkers
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetTasksbyCaseworkerAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Get all tasks for the caseworkers
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='caseworkerId'>
+            The caseworker id to access the records from Core system.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 0
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetAllActiveCitizens(Kmd.Momentum.Mea.Client.IInternalClient,System.Nullable{System.Int32})">
+            <summary>
+            Get all active citizens
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 1
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetAllActiveCitizensAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <summary>
+            Get all active citizens
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='pageNumber'>
+            The PageNumber to access the records from Core system. Minimum Value is 1
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCitizenByCpr(Kmd.Momentum.Mea.Client.IInternalClient,System.String)">
+            <summary>
+            Get Citizen in Momentum by CPR
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cprNumber'>
+            The CPR number to search the record in the Core system
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCitizenByCprAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by CPR
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cprNumber'>
+            The CPR number to search the record in the Core system
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCitizenById(Kmd.Momentum.Mea.Client.IInternalClient,System.String)">
+            <summary>
+            Get Citizen in Momentum by ID
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='citizenId'>
+            The Citizen ID or Momentum Id to search the record in the Core system
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.GetCitizenByIdAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get Citizen in Momentum by ID
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='citizenId'>
+            The Citizen ID or Momentum Id to search the record in the Core system
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.CreateJournalNote(Kmd.Momentum.Mea.Client.IInternalClient,Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel,System.String)">
+            <summary>
+            Create a Journal Note with attachment
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='body'>
+            The requestmodel to save as a journal note record, in the Core system
+            </param>
+            <param name='momentumCitizenId'>
+            The MomentumCitizenID or CitizenId to Create the journal note record in the
+            Core system
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.CreateJournalNoteAsync(Kmd.Momentum.Mea.Client.IInternalClient,Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Create a Journal Note with attachment
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='body'>
+            The requestmodel to save as a journal note record, in the Core system
+            </param>
+            <param name='momentumCitizenId'>
+            The MomentumCitizenID or CitizenId to Create the journal note record in the
+            Core system
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.HealthReady(Kmd.Momentum.Mea.Client.IInternalClient)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.HealthReadyAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.HealthLive(Kmd.Momentum.Mea.Client.IInternalClient)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.HealthLiveAsync(Kmd.Momentum.Mea.Client.IInternalClient,System.Threading.CancellationToken)">
+            <summary>
+            Get Health
+            </summary>
+            <remarks>
+            Provides an indication about the health of the API
+            </remarks>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.UpdateTaskStatus(Kmd.Momentum.Mea.Client.IInternalClient,Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus,System.String)">
+            <summary>
+            Update Status
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='body'>
+            The request model to update task in the Core system
+            </param>
+            <param name='taskId'>
+            The TaskId to update the task in the Core system
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.InternalClientExtensions.UpdateTaskStatusAsync(Kmd.Momentum.Mea.Client.IInternalClient,Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Update Status
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='body'>
+            The request model to update task in the Core system
+            </param>
+            <param name='taskId'>
+            The TaskId to update the task in the Core system
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Assembly.#ctor">
+            <summary>
+            Initializes a new instance of the Assembly class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Assembly.#ctor(System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.TypeInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Type},System.String,Kmd.Momentum.Mea.Client.Models.MethodInfo,System.String,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.String,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Module},System.Nullable{System.Boolean},System.Nullable{System.Int64},System.String)">
+            <summary>
+            Initializes a new instance of the Assembly class.
+            </summary>
+            <param name="securityRuleSet">Possible values include: 'None',
+            'Level1', 'Level2'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.DefinedTypes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.ExportedTypes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.CodeBase">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.EntryPoint">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.FullName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.ImageRuntimeVersion">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.IsDynamic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.Location">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.ReflectionOnly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.IsFullyTrusted">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.EscapedCodeBase">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.ManifestModule">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.Modules">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.GlobalAssemblyCache">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.HostContext">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Assembly.SecurityRuleSet">
+            <summary>
+            Gets or sets possible values include: 'None', 'Level1', 'Level2'
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.AssignedActors.#ctor">
+            <summary>
+            Initializes a new instance of the AssignedActors class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.AssignedActors.#ctor(System.Nullable{System.Guid},System.String)">
+            <summary>
+            Initializes a new instance of the AssignedActors class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.AssignedActors.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.AssignedActors.DisplayName">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerData.#ctor">
+            <summary>
+            Initializes a new instance of the CaseworkerData class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerData.#ctor(System.String,System.String,System.String,System.String,System.String,Kmd.Momentum.Mea.Client.Models.Email,Kmd.Momentum.Mea.Client.Models.Phone,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the CaseworkerData class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.DisplayName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.GivenName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.MiddleName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.Initials">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.Email">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.Phone">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.CaseworkerIdentifier">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.IsBookable">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerData.IsActive">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.#ctor">
+            <summary>
+            Initializes a new instance of the CaseworkerDataResponseModel
+            class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the CaseworkerDataResponseModel
+            class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.CaseworkerId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.DisplayName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.GivenName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.MiddleName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.Initials">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.Email">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.Phone">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.CaseworkerIdentifier">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.IsBookable">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel.IsActive">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerList.#ctor">
+            <summary>
+            Initializes a new instance of the CaseworkerList class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CaseworkerList.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CaseworkerDataResponseModel})">
+            <summary>
+            Initializes a new instance of the CaseworkerList class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerList.TotalNoOfPages">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerList.TotalSearchCount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerList.PageNo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CaseworkerList.Result">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.#ctor">
+            <summary>
+            Initializes a new instance of the CitizenDataResponseModel class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the CitizenDataResponseModel class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.CitizenId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.DisplayName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.GivenName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.MiddleName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.Initials">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.Email">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.Phone">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.CaseworkerIdentifier">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.IsBookable">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel.IsActive">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CitizenList.#ctor">
+            <summary>
+            Initializes a new instance of the CitizenList class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CitizenList.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CitizenDataResponseModel})">
+            <summary>
+            Initializes a new instance of the CitizenList class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenList.TotalNoOfPages">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenList.TotalSearchCount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenList.PageNo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CitizenList.Result">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.#ctor">
+            <summary>
+            Initializes a new instance of the ConstructorInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the ConstructorInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="attributes">Possible values include: 'ReuseSlot',
+            'ReuseSlot', 'Private', 'FamANDAssem', 'Assembly', 'Family',
+            'FamORAssem', 'Public', 'MemberAccessMask', 'UnmanagedExport',
+            'Static', 'Final', 'Virtual', 'HideBySig', 'VtableLayoutMask',
+            'VtableLayoutMask', 'CheckAccessOnOverride', 'Abstract',
+            'SpecialName', 'RTSpecialName', 'PinvokeImpl', 'HasSecurity',
+            'RequireSecObject', 'ReservedMask'</param>
+            <param name="methodImplementationFlags">Possible values include:
+            'Managed', 'Managed', 'Native', 'OPTIL', 'CodeTypeMask',
+            'CodeTypeMask', 'Unmanaged', 'Unmanaged', 'NoInlining',
+            'ForwardRef', 'Synchronized', 'NoOptimization', 'PreserveSig',
+            'AggressiveInlining', 'AggressiveOptimization', 'InternalCall',
+            'MaxMethodImplVal'</param>
+            <param name="callingConvention">Possible values include:
+            'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'ReuseSlot', 'ReuseSlot',
+            'Private', 'FamANDAssem', 'Assembly', 'Family', 'FamORAssem',
+            'Public', 'MemberAccessMask', 'UnmanagedExport', 'Static', 'Final',
+            'Virtual', 'HideBySig', 'VtableLayoutMask', 'VtableLayoutMask',
+            'CheckAccessOnOverride', 'Abstract', 'SpecialName',
+            'RTSpecialName', 'PinvokeImpl', 'HasSecurity', 'RequireSecObject',
+            'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.MethodImplementationFlags">
+            <summary>
+            Gets or sets possible values include: 'Managed', 'Managed',
+            'Native', 'OPTIL', 'CodeTypeMask', 'CodeTypeMask', 'Unmanaged',
+            'Unmanaged', 'NoInlining', 'ForwardRef', 'Synchronized',
+            'NoOptimization', 'PreserveSig', 'AggressiveInlining',
+            'AggressiveOptimization', 'InternalCall', 'MaxMethodImplVal'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.CallingConvention">
+            <summary>
+            Gets or sets possible values include: 'Standard', 'VarArgs', 'Any',
+            'HasThis', 'ExplicitThis'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsAbstract">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsConstructor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsFinal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsHideBySig">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsStatic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsVirtual">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsFamilyAndAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsFamilyOrAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsConstructedGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsGenericMethodDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.ContainsGenericParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.MethodHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeData.#ctor">
+            <summary>
+            Initializes a new instance of the CustomAttributeData class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeData.#ctor(Kmd.Momentum.Mea.Client.Models.Type,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument})">
+            <summary>
+            Initializes a new instance of the CustomAttributeData class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeData.AttributeType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeData.ConstructorArguments">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeData.NamedArguments">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.#ctor">
+            <summary>
+            Initializes a new instance of the CustomAttributeNamedArgument
+            class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.#ctor(Kmd.Momentum.Mea.Client.Models.MemberInfo,Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument,System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the CustomAttributeNamedArgument
+            class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.MemberInfo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.TypedValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.MemberName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeNamedArgument.IsField">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument.#ctor">
+            <summary>
+            Initializes a new instance of the CustomAttributeTypedArgument
+            class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument.#ctor(Kmd.Momentum.Mea.Client.Models.Type,System.Object)">
+            <summary>
+            Initializes a new instance of the CustomAttributeTypedArgument
+            class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument.ArgumentType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.CustomAttributeTypedArgument.Value">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Email.#ctor">
+            <summary>
+            Initializes a new instance of the Email class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Email.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the Email class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Email.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Email.Address">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.EventInfo.#ctor">
+            <summary>
+            Initializes a new instance of the EventInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.EventInfo.#ctor(System.String,System.String,System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.MethodInfo,Kmd.Momentum.Mea.Client.Models.MethodInfo,Kmd.Momentum.Mea.Client.Models.MethodInfo,System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.Type,System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the EventInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="attributes">Possible values include: 'None',
+            'SpecialName', 'ReservedMask', 'ReservedMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'None', 'SpecialName',
+            'ReservedMask', 'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.AddMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.RemoveMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.RaiseMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.IsMulticast">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.EventHandlerType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Exception.#ctor">
+            <summary>
+            Initializes a new instance of the Exception class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Exception.#ctor(Kmd.Momentum.Mea.Client.Models.MethodBase,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},Kmd.Momentum.Mea.Client.Models.Exception,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the Exception class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.TargetSite">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.StackTrace">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.Message">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.Data">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.InnerException">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.HelpLink">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.Source">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Exception.HResult">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.FieldInfo.#ctor">
+            <summary>
+            Initializes a new instance of the FieldInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.FieldInfo.#ctor(System.String,System.String,Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.RuntimeFieldHandle,System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the FieldInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="attributes">Possible values include: 'PrivateScope',
+            'Private', 'FamANDAssem', 'Assembly', 'Family', 'FamORAssem',
+            'Public', 'FieldAccessMask', 'Static', 'InitOnly', 'Literal',
+            'NotSerialized', 'HasFieldRVA', 'SpecialName', 'RTSpecialName',
+            'HasFieldMarshal', 'PinvokeImpl', 'HasDefault',
+            'ReservedMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'PrivateScope', 'Private',
+            'FamANDAssem', 'Assembly', 'Family', 'FamORAssem', 'Public',
+            'FieldAccessMask', 'Static', 'InitOnly', 'Literal',
+            'NotSerialized', 'HasFieldRVA', 'SpecialName', 'RTSpecialName',
+            'HasFieldMarshal', 'PinvokeImpl', 'HasDefault', 'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.FieldType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsInitOnly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsLiteral">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsNotSerialized">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsPinvokeImpl">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsStatic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsFamilyAndAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsFamilyOrAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.FieldHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.HealthReport.#ctor">
+            <summary>
+            Initializes a new instance of the HealthReport class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.HealthReport.#ctor(System.Collections.Generic.IDictionary{System.String,Kmd.Momentum.Mea.Client.Models.HealthReportEntry},System.String,Kmd.Momentum.Mea.Client.Models.TimeSpan)">
+            <summary>
+            Initializes a new instance of the HealthReport class.
+            </summary>
+            <param name="status">Possible values include: 'Unhealthy',
+            'Degraded', 'Healthy'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReport.Entries">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReport.Status">
+            <summary>
+            Gets or sets possible values include: 'Unhealthy', 'Degraded',
+            'Healthy'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReport.TotalDuration">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.#ctor">
+            <summary>
+            Initializes a new instance of the HealthReportEntry class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,Kmd.Momentum.Mea.Client.Models.TimeSpan,Kmd.Momentum.Mea.Client.Models.Exception,System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Initializes a new instance of the HealthReportEntry class.
+            </summary>
+            <param name="status">Possible values include: 'Unhealthy',
+            'Degraded', 'Healthy'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Data">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Duration">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Exception">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Status">
+            <summary>
+            Gets or sets possible values include: 'Unhealthy', 'Degraded',
+            'Healthy'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Tags">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel.#ctor">
+            <summary>
+            Initializes a new instance of the JournalNoteDocumentRequestModel
+            class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the JournalNoteDocumentRequestModel
+            class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel.ContentType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel.Content">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.#ctor">
+            <summary>
+            Initializes a new instance of the JournalNoteRequestModel class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.JournalNoteDocumentRequestModel})">
+            <summary>
+            Initializes a new instance of the JournalNoteRequestModel class.
+            </summary>
+            <param name="type">Possible values include: 'SMS', 'OTHER'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Cpr">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Title">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Type">
+            <summary>
+            Gets or sets possible values include: 'SMS', 'OTHER'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Body">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Documents">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MemberInfo.#ctor">
+            <summary>
+            Initializes a new instance of the MemberInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MemberInfo.#ctor(System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,System.String,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the MemberInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MethodBase.#ctor">
+            <summary>
+            Initializes a new instance of the MethodBase class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MethodBase.#ctor(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the MethodBase class.
+            </summary>
+            <param name="attributes">Possible values include: 'ReuseSlot',
+            'ReuseSlot', 'Private', 'FamANDAssem', 'Assembly', 'Family',
+            'FamORAssem', 'Public', 'MemberAccessMask', 'UnmanagedExport',
+            'Static', 'Final', 'Virtual', 'HideBySig', 'VtableLayoutMask',
+            'VtableLayoutMask', 'CheckAccessOnOverride', 'Abstract',
+            'SpecialName', 'RTSpecialName', 'PinvokeImpl', 'HasSecurity',
+            'RequireSecObject', 'ReservedMask'</param>
+            <param name="methodImplementationFlags">Possible values include:
+            'Managed', 'Managed', 'Native', 'OPTIL', 'CodeTypeMask',
+            'CodeTypeMask', 'Unmanaged', 'Unmanaged', 'NoInlining',
+            'ForwardRef', 'Synchronized', 'NoOptimization', 'PreserveSig',
+            'AggressiveInlining', 'AggressiveOptimization', 'InternalCall',
+            'MaxMethodImplVal'</param>
+            <param name="callingConvention">Possible values include:
+            'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.Attributes">
+            <summary>
+            Gets or sets possible values include: 'ReuseSlot', 'ReuseSlot',
+            'Private', 'FamANDAssem', 'Assembly', 'Family', 'FamORAssem',
+            'Public', 'MemberAccessMask', 'UnmanagedExport', 'Static', 'Final',
+            'Virtual', 'HideBySig', 'VtableLayoutMask', 'VtableLayoutMask',
+            'CheckAccessOnOverride', 'Abstract', 'SpecialName',
+            'RTSpecialName', 'PinvokeImpl', 'HasSecurity', 'RequireSecObject',
+            'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.MethodImplementationFlags">
+            <summary>
+            Gets or sets possible values include: 'Managed', 'Managed',
+            'Native', 'OPTIL', 'CodeTypeMask', 'CodeTypeMask', 'Unmanaged',
+            'Unmanaged', 'NoInlining', 'ForwardRef', 'Synchronized',
+            'NoOptimization', 'PreserveSig', 'AggressiveInlining',
+            'AggressiveOptimization', 'InternalCall', 'MaxMethodImplVal'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.CallingConvention">
+            <summary>
+            Gets or sets possible values include: 'Standard', 'VarArgs', 'Any',
+            'HasThis', 'ExplicitThis'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsAbstract">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsConstructor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsFinal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsHideBySig">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsStatic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsVirtual">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsFamilyAndAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsFamilyOrAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsConstructedGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsGenericMethodDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.ContainsGenericParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.MethodHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MethodInfo.#ctor">
+            <summary>
+            Initializes a new instance of the MethodInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.MethodInfo.#ctor(System.String,Kmd.Momentum.Mea.Client.Models.ParameterInfo,Kmd.Momentum.Mea.Client.Models.Type,System.Object,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the MethodInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="attributes">Possible values include: 'ReuseSlot',
+            'ReuseSlot', 'Private', 'FamANDAssem', 'Assembly', 'Family',
+            'FamORAssem', 'Public', 'MemberAccessMask', 'UnmanagedExport',
+            'Static', 'Final', 'Virtual', 'HideBySig', 'VtableLayoutMask',
+            'VtableLayoutMask', 'CheckAccessOnOverride', 'Abstract',
+            'SpecialName', 'RTSpecialName', 'PinvokeImpl', 'HasSecurity',
+            'RequireSecObject', 'ReservedMask'</param>
+            <param name="methodImplementationFlags">Possible values include:
+            'Managed', 'Managed', 'Native', 'OPTIL', 'CodeTypeMask',
+            'CodeTypeMask', 'Unmanaged', 'Unmanaged', 'NoInlining',
+            'ForwardRef', 'Synchronized', 'NoOptimization', 'PreserveSig',
+            'AggressiveInlining', 'AggressiveOptimization', 'InternalCall',
+            'MaxMethodImplVal'</param>
+            <param name="callingConvention">Possible values include:
+            'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.ReturnParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.ReturnType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.ReturnTypeCustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'ReuseSlot', 'ReuseSlot',
+            'Private', 'FamANDAssem', 'Assembly', 'Family', 'FamORAssem',
+            'Public', 'MemberAccessMask', 'UnmanagedExport', 'Static', 'Final',
+            'Virtual', 'HideBySig', 'VtableLayoutMask', 'VtableLayoutMask',
+            'CheckAccessOnOverride', 'Abstract', 'SpecialName',
+            'RTSpecialName', 'PinvokeImpl', 'HasSecurity', 'RequireSecObject',
+            'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.MethodImplementationFlags">
+            <summary>
+            Gets or sets possible values include: 'Managed', 'Managed',
+            'Native', 'OPTIL', 'CodeTypeMask', 'CodeTypeMask', 'Unmanaged',
+            'Unmanaged', 'NoInlining', 'ForwardRef', 'Synchronized',
+            'NoOptimization', 'PreserveSig', 'AggressiveInlining',
+            'AggressiveOptimization', 'InternalCall', 'MaxMethodImplVal'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.CallingConvention">
+            <summary>
+            Gets or sets possible values include: 'Standard', 'VarArgs', 'Any',
+            'HasThis', 'ExplicitThis'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsAbstract">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsConstructor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsFinal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsHideBySig">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsStatic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsVirtual">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsFamilyAndAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsFamilyOrAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsConstructedGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsGenericMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsGenericMethodDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.ContainsGenericParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.MethodHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Module.#ctor">
+            <summary>
+            Initializes a new instance of the Module class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Module.#ctor(Kmd.Momentum.Mea.Client.Models.Assembly,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Guid},System.String,Kmd.Momentum.Mea.Client.Models.ModuleHandle,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the Module class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.Assembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.FullyQualifiedName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.MdStreamVersion">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.ModuleVersionId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.ScopeName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.ModuleHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Module.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ModuleHandle.#ctor">
+            <summary>
+            Initializes a new instance of the ModuleHandle class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ModuleHandle.#ctor(System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the ModuleHandle class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ModuleHandle.MdStreamVersion">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ParameterInfo.#ctor">
+            <summary>
+            Initializes a new instance of the ParameterInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ParameterInfo.#ctor(System.String,Kmd.Momentum.Mea.Client.Models.MemberInfo,System.String,Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Object,System.Object,System.Nullable{System.Boolean},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the ParameterInfo class.
+            </summary>
+            <param name="attributes">Possible values include: 'None', 'In',
+            'Out', 'Lcid', 'Retval', 'Optional', 'HasDefault',
+            'HasFieldMarshal', 'Reserved3', 'Reserved4', 'ReservedMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'None', 'In', 'Out', 'Lcid',
+            'Retval', 'Optional', 'HasDefault', 'HasFieldMarshal', 'Reserved3',
+            'Reserved4', 'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.Member">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.ParameterType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.Position">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.IsIn">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.IsLcid">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.IsOptional">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.IsOut">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.IsRetval">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.DefaultValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.RawDefaultValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.HasDefaultValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Participants.#ctor">
+            <summary>
+            Initializes a new instance of the Participants class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Participants.#ctor(System.Nullable{System.Guid},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the Participants class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Participants.ActorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Participants.Responsibility">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Phone.#ctor">
+            <summary>
+            Initializes a new instance of the Phone class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Phone.#ctor(System.String,System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the Phone class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Phone.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Phone.Number">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Phone.IsMobile">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ProblemDetails.#ctor">
+            <summary>
+            Initializes a new instance of the ProblemDetails class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.ProblemDetails.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Initializes a new instance of the ProblemDetails class.
+            </summary>
+            <param name="additionalProperties">Unmatched properties from the
+            message are deserialized this collection</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.AdditionalProperties">
+            <summary>
+            Gets or sets unmatched properties from the message are deserialized
+            this collection
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.Type">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.Title">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.Status">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.Detail">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.Instance">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.PropertyInfo.#ctor">
+            <summary>
+            Initializes a new instance of the PropertyInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.PropertyInfo.#ctor(System.String,Kmd.Momentum.Mea.Client.Models.Type,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.MethodInfo,Kmd.Momentum.Mea.Client.Models.MethodInfo,System.String,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Module,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the PropertyInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="attributes">Possible values include: 'None',
+            'SpecialName', 'RTSpecialName', 'HasDefault', 'Reserved2',
+            'Reserved3', 'Reserved4', 'ReservedMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.PropertyType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'None', 'SpecialName',
+            'RTSpecialName', 'HasDefault', 'Reserved2', 'Reserved3',
+            'Reserved4', 'ReservedMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.CanRead">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.CanWrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.GetMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.SetMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Reference.#ctor">
+            <summary>
+            Initializes a new instance of the Reference class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Reference.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the Reference class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Reference.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Reference.Type">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeFieldHandle.#ctor">
+            <summary>
+            Initializes a new instance of the RuntimeFieldHandle class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeFieldHandle.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the RuntimeFieldHandle class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.RuntimeFieldHandle.Value">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle.#ctor">
+            <summary>
+            Initializes a new instance of the RuntimeMethodHandle class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the RuntimeMethodHandle class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.RuntimeMethodHandle.Value">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeTypeHandle.#ctor">
+            <summary>
+            Initializes a new instance of the RuntimeTypeHandle class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.RuntimeTypeHandle.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the RuntimeTypeHandle class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.RuntimeTypeHandle.Value">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the StructLayoutAttribute class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the StructLayoutAttribute class.
+            </summary>
+            <param name="value">Possible values include: 'Sequential',
+            'Explicit', 'Auto'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute.Value">
+            <summary>
+            Gets or sets possible values include: 'Sequential', 'Explicit',
+            'Auto'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute.TypeId">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TaskData.#ctor">
+            <summary>
+            Initializes a new instance of the TaskData class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TaskData.#ctor(System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.DateTime},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.AssignedActors},System.String,System.Nullable{System.Int32},System.Nullable{System.Guid},Kmd.Momentum.Mea.Client.Models.Reference,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Participants},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the TaskData class.
+            </summary>
+            <param name="state">Possible values include: 'Active', 'Completed',
+            'Canceled', 'Started', 'DeadlineExceeded'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.SicknessBenefitType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Title">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.State">
+            <summary>
+            Gets or sets possible values include: 'Active', 'Completed',
+            'Canceled', 'Started', 'DeadlineExceeded'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Deadline">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.CreatedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.UpdatedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.UpdatedById">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.CreatedById">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.StateChangedAt">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Assignee">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.AssignedActors">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Subject">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Type">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.RelatedEntityId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Reference">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.Participants">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.RelatedEntityType">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus.#ctor">
+            <summary>
+            Initializes a new instance of the TaskUpdateStatus class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the TaskUpdateStatus class.
+            </summary>
+            <param name="taskAction">Possible values include: 'Completed',
+            'Cancel', 'Delete', 'Start'</param>
+            <param name="taskContext">Possible values include: 'Citizens',
+            'Companies', 'Offers', 'Dashboard', 'Admin', 'Search'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus.TaskAction">
+            <summary>
+            Gets or sets possible values include: 'Completed', 'Cancel',
+            'Delete', 'Start'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TaskUpdateStatus.TaskContext">
+            <summary>
+            Gets or sets possible values include: 'Citizens', 'Companies',
+            'Offers', 'Dashboard', 'Admin', 'Search'
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TimeSpan.#ctor">
+            <summary>
+            Initializes a new instance of the TimeSpan class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TimeSpan.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the TimeSpan class.
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Ticks">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Days">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Hours">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Milliseconds">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Minutes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.Seconds">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.TotalDays">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.TotalHours">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.TotalMilliseconds">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.TotalMinutes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TimeSpan.TotalSeconds">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Type.#ctor">
+            <summary>
+            Initializes a new instance of the Type class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.Type.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,Kmd.Momentum.Mea.Client.Models.Assembly,Kmd.Momentum.Mea.Client.Models.Module,System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.MethodBase,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Type},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute,Kmd.Momentum.Mea.Client.Models.ConstructorInfo,Kmd.Momentum.Mea.Client.Models.RuntimeTypeHandle,System.Nullable{System.Guid},Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the Type class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="genericParameterAttributes">Possible values include:
+            'None', 'Covariant', 'Contravariant', 'VarianceMask',
+            'ReferenceTypeConstraint', 'NotNullableValueTypeConstraint',
+            'DefaultConstructorConstraint', 'SpecialConstraintMask'</param>
+            <param name="attributes">Possible values include: 'NotPublic',
+            'NotPublic', 'NotPublic', 'NotPublic', 'Public', 'NestedPublic',
+            'NestedPrivate', 'NestedFamily', 'NestedAssembly',
+            'NestedFamANDAssem', 'VisibilityMask', 'VisibilityMask',
+            'SequentialLayout', 'ExplicitLayout', 'LayoutMask',
+            'ClassSemanticsMask', 'ClassSemanticsMask', 'Abstract', 'Sealed',
+            'SpecialName', 'RTSpecialName', 'Import', 'Serializable',
+            'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
+            'StringFormatMask', 'HasSecurity', 'ReservedMask',
+            'BeforeFieldInit', 'CustomFormatMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsInterface">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.NamespaceProperty">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.AssemblyQualifiedName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.FullName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.Assembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNested">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.DeclaringMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.UnderlyingSystemType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsTypeDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsByRef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsPointer">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsConstructedGenericType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsGenericParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsGenericTypeParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsGenericMethodParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsGenericType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsGenericTypeDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSZArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsVariableBoundArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsByRefLike">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.HasElementType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.GenericTypeArguments">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.GenericParameterPosition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.GenericParameterAttributes">
+            <summary>
+            Gets or sets possible values include: 'None', 'Covariant',
+            'Contravariant', 'VarianceMask', 'ReferenceTypeConstraint',
+            'NotNullableValueTypeConstraint', 'DefaultConstructorConstraint',
+            'SpecialConstraintMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.Attributes">
+            <summary>
+            Gets or sets possible values include: 'NotPublic', 'NotPublic',
+            'NotPublic', 'NotPublic', 'Public', 'NestedPublic',
+            'NestedPrivate', 'NestedFamily', 'NestedAssembly',
+            'NestedFamANDAssem', 'VisibilityMask', 'VisibilityMask',
+            'SequentialLayout', 'ExplicitLayout', 'LayoutMask',
+            'ClassSemanticsMask', 'ClassSemanticsMask', 'Abstract', 'Sealed',
+            'SpecialName', 'RTSpecialName', 'Import', 'Serializable',
+            'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
+            'StringFormatMask', 'HasSecurity', 'ReservedMask',
+            'BeforeFieldInit', 'CustomFormatMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsAbstract">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsImport">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSealed">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedFamANDAssem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedFamORAssem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNestedPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsNotPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsAutoLayout">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsExplicitLayout">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsLayoutSequential">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsAnsiClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsAutoClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsUnicodeClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsCOMObject">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsContextful">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsEnum">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsMarshalByRef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsPrimitive">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsValueType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSignatureType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.StructLayoutAttribute">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.TypeInitializer">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.TypeHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.Guid">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.BaseType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsSerializable">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.ContainsGenericParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsVisible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.Type.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TypeInfo.#ctor">
+            <summary>
+            Initializes a new instance of the TypeInfo class.
+            </summary>
+        </member>
+        <member name="M:Kmd.Momentum.Mea.Client.Models.TypeInfo.#ctor(System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Type},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.ConstructorInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.EventInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.FieldInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.MemberInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.MethodInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.TypeInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.PropertyInfo},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Type},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,Kmd.Momentum.Mea.Client.Models.Assembly,Kmd.Momentum.Mea.Client.Models.Module,System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.MethodBase,Kmd.Momentum.Mea.Client.Models.Type,Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.Type},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute,Kmd.Momentum.Mea.Client.Models.ConstructorInfo,Kmd.Momentum.Mea.Client.Models.RuntimeTypeHandle,System.Nullable{System.Guid},Kmd.Momentum.Mea.Client.Models.Type,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Kmd.Momentum.Mea.Client.Models.CustomAttributeData},System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the TypeInfo class.
+            </summary>
+            <param name="memberType">Possible values include: 'Constructor',
+            'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
+            'NestedType', 'All'</param>
+            <param name="genericParameterAttributes">Possible values include:
+            'None', 'Covariant', 'Contravariant', 'VarianceMask',
+            'ReferenceTypeConstraint', 'NotNullableValueTypeConstraint',
+            'DefaultConstructorConstraint', 'SpecialConstraintMask'</param>
+            <param name="attributes">Possible values include: 'NotPublic',
+            'NotPublic', 'NotPublic', 'NotPublic', 'Public', 'NestedPublic',
+            'NestedPrivate', 'NestedFamily', 'NestedAssembly',
+            'NestedFamANDAssem', 'VisibilityMask', 'VisibilityMask',
+            'SequentialLayout', 'ExplicitLayout', 'LayoutMask',
+            'ClassSemanticsMask', 'ClassSemanticsMask', 'Abstract', 'Sealed',
+            'SpecialName', 'RTSpecialName', 'Import', 'Serializable',
+            'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
+            'StringFormatMask', 'HasSecurity', 'ReservedMask',
+            'BeforeFieldInit', 'CustomFormatMask'</param>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.GenericTypeParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredConstructors">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredEvents">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredFields">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredMembers">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredMethods">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredNestedTypes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaredProperties">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.ImplementedInterfaces">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsInterface">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.MemberType">
+            <summary>
+            Gets or sets possible values include: 'Constructor', 'Event',
+            'Field', 'Method', 'Property', 'TypeInfo', 'Custom', 'NestedType',
+            'All'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.NamespaceProperty">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.AssemblyQualifiedName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.FullName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.Assembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.Module">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNested">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaringType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.DeclaringMethod">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.ReflectedType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.UnderlyingSystemType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsTypeDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsByRef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsPointer">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsConstructedGenericType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsGenericParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsGenericTypeParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsGenericMethodParameter">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsGenericType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsGenericTypeDefinition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSZArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsVariableBoundArray">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsByRefLike">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.HasElementType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.GenericTypeArguments">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.GenericParameterPosition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.GenericParameterAttributes">
+            <summary>
+            Gets or sets possible values include: 'None', 'Covariant',
+            'Contravariant', 'VarianceMask', 'ReferenceTypeConstraint',
+            'NotNullableValueTypeConstraint', 'DefaultConstructorConstraint',
+            'SpecialConstraintMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.Attributes">
+            <summary>
+            Gets or sets possible values include: 'NotPublic', 'NotPublic',
+            'NotPublic', 'NotPublic', 'Public', 'NestedPublic',
+            'NestedPrivate', 'NestedFamily', 'NestedAssembly',
+            'NestedFamANDAssem', 'VisibilityMask', 'VisibilityMask',
+            'SequentialLayout', 'ExplicitLayout', 'LayoutMask',
+            'ClassSemanticsMask', 'ClassSemanticsMask', 'Abstract', 'Sealed',
+            'SpecialName', 'RTSpecialName', 'Import', 'Serializable',
+            'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
+            'StringFormatMask', 'HasSecurity', 'ReservedMask',
+            'BeforeFieldInit', 'CustomFormatMask'
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsAbstract">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsImport">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSealed">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSpecialName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedAssembly">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedFamANDAssem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedFamily">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedFamORAssem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedPrivate">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNestedPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsNotPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsPublic">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsAutoLayout">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsExplicitLayout">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsLayoutSequential">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsAnsiClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsAutoClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsUnicodeClass">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsCOMObject">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsContextful">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsEnum">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsMarshalByRef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsPrimitive">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsValueType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSignatureType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSecurityCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSecuritySafeCritical">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSecurityTransparent">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.StructLayoutAttribute">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.TypeInitializer">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.TypeHandle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.Guid">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.BaseType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsSerializable">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.ContainsGenericParameters">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsVisible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.Name">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.CustomAttributes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.IsCollectible">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.MetadataToken">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "+7gQo2CfJ41d9yiHSXxtG2wFuSPM2qKYL2ArJzK90M/6XNwdMiUwwLsD13josCDAZrwi/JU9Po0Eyw0U7b0Umw==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\github\\ajaygargdev\\Kmd-Momentum-Mea-Client\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\2.9.2\\microsoft.codeanalysis.fxcopanalyzers.2.9.2.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\2.9.2\\microsoft.codeanalysis.versioncheckanalyzer.2.9.2.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.codequality.analyzers\\2.9.2\\microsoft.codequality.analyzers.2.9.2.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.netcore.analyzers\\2.9.2\\microsoft.netcore.analyzers.2.9.2.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.netframework.analyzers\\2.9.2\\microsoft.netframework.analyzers.2.9.2.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\microsoft.rest.clientruntime.2.3.21.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

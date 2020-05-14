@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Kmd.Momentum.Mea.Client/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Rest.ClientRuntime": "2.3.21",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Kmd.Momentum.Mea.Client.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Kmd.Momentum.Mea.Client.dll": {}
-        }
-      },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
         "type": "package",
         "dependencies": {
@@ -51,44 +38,12 @@
           "build/Microsoft.NetFramework.Analyzers.props": {}
         }
       },
-      "Microsoft.Rest.ClientRuntime/2.3.21": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
-        }
-      },
-      "Newtonsoft.Json/12.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
       }
     }
   },
   "libraries": {
-    "Kmd.Momentum.Mea.Client/1.0.0": {
-      "sha512": "s3Fao8daxCUdK/ygXA9ccUMm/qDgYDeLrL5lo3nU+ltH38RhL4Uj5GmBeDXJjwZAQKXvTYT/ZIbKYhK4y7RK4g==",
-      "type": "package",
-      "path": "kmd.momentum.mea.client/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "kmd.momentum.mea.client.1.0.0.nupkg.sha512",
-        "kmd.momentum.mea.client.nuspec",
-        "lib/netcoreapp3.1/Kmd.Momentum.Mea.Client.dll"
-      ]
-    },
     "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
       "sha512": "/FET7my2lb3TfKZwP0VipAH19N8y2p7CRGLIxtRYXaBBpOoG0fDCWvF8IaOtipcgZ8/xFmFqVVxjmdEeZFEBBw==",
       "type": "package",
@@ -269,56 +224,6 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.Rest.ClientRuntime/2.3.21": {
-      "sha512": "KDYlgTyO693V6pi6SGk9eg+dDvKjuOgmkapbHdpnB1SmTPKpvWxVLIMyARJsCFLfB6axyURUJHOfvxBQ0yJKeg==",
-      "type": "package",
-      "path": "microsoft.rest.clientruntime/2.3.21",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/Microsoft.Rest.ClientRuntime.dll",
-        "lib/net452/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
-        "lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "lib/net461/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
-        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll",
-        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
-        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
-        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
-        "microsoft.rest.clientruntime.2.3.21.nupkg.sha512",
-        "microsoft.rest.clientruntime.nuspec"
-      ]
-    },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
     "StyleCop.Analyzers/1.1.118": {
       "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
       "type": "package",
@@ -347,7 +252,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Kmd.Momentum.Mea.Client >= 1.0.0",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.2",
       "StyleCop.Analyzers >= 1.1.118"
     ]
@@ -359,11 +263,11 @@
   "project": {
     "version": "0.1.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\kmd-momentum-mea-client\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
+      "projectUniqueName": "D:\\Repo\\github\\ajaygargdev\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
       "projectName": "Kmd.Momentum.Mea.Client.Sample",
-      "projectPath": "D:\\Repo\\kmd-momentum-mea-client\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
+      "projectPath": "D:\\Repo\\github\\ajaygargdev\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
       "packagesPath": "C:\\Users\\AA00595162\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\kmd-momentum-mea-client\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\obj\\",
+      "outputPath": "D:\\Repo\\github\\ajaygargdev\\Kmd-Momentum-Mea-Client\\sample\\Kmd.Momentum.Mea.Client.Sample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -394,10 +298,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Kmd.Momentum.Mea.Client": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          },
           "Microsoft.CodeAnalysis.FxCopAnalyzers": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
             "suppressParent": "All",

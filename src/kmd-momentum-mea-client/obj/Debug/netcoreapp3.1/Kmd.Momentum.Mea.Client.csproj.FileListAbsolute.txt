@@ -1,0 +1,16 @@
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.deps.json
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfoInputs.cache
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfo.cs
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.csproj.CoreCompileInputs.cache
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\kmd-momentum-mea-client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.deps.json
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.csproj.CoreCompileInputs.cache
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfoInputs.cache
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfo.cs
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
+D:\Repo\kmd-momentum-mea-client\Kmd-Momentum-Mea-Client\src\kmd-momentum-mea-client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb

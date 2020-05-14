@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hUt84wMeWx1DjJjSf7OZWNEGKbqqvMvixaHBHudHJ7aoLXafOPNENAaI/lsa8qHQ9D3ZJsXcDCF0gz3Di0Q3Ig==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\kmd-momentum-mea-client\\Kmd-Momentum-Mea-Client\\src\\kmd-momentum-mea-client\\Kmd.Momentum.Mea.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AA00595162\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\microsoft.rest.clientruntime.2.3.21.nupkg.sha512",
+    "C:\\Users\\AA00595162\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

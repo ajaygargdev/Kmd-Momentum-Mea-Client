@@ -17,7 +17,6 @@ D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Clien
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.dll
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.pdb
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.xml
-D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.csprojAssemblyReference.cache
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.csproj.CoreCompileInputs.cache
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.AssemblyInfoInputs.cache
 D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\sample\Kmd.Momentum.Mea.Client.Sample\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.AssemblyInfo.cs

@@ -16,7 +16,7 @@ namespace Kmd.Momentum.Mea.Client
 
     /// <summary>
     /// </summary>
-    internal partial interface IInternalClient : System.IDisposable
+    public partial interface IInternalClient : System.IDisposable
     {
         /// <summary>
         /// The base URI of the service.

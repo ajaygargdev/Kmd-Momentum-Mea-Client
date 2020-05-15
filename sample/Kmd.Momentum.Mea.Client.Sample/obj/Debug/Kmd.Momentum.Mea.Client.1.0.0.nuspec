@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Kmd.Momentum.Mea.Client</id>
+    <version>1.0.0</version>
+    <authors>KMD</authors>
+    <owners>KMD</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/ajaygargdev/Kmd-Momentum-Mea-Client</projectUrl>
+    <iconUrl>https://console.kmdlogic.io/favicon-32x32.png</iconUrl>
+    <description>A dotnet client library for calling Momentum Core Api using Momentum Externl Api.</description>
+    <tags>kmd logic citizen documents</tags>
+    <repository type="git" url="https://github.com/ajaygargdev/Kmd-Momentum-Mea-Client" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.runtimeconfig.json" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.runtimeconfig.json" />
+    <file src="C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.dll" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.dll" />
+    <file src="C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.xml" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.Sample.xml" />
+  </files>
+</package>

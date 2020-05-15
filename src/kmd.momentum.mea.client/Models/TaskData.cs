@@ -24,8 +24,26 @@ namespace Kmd.Momentum.Mea.Client.Models
         /// <summary>
         /// Initializes a new instance of the TaskData class.
         /// </summary>
+        /// <param name="sicknessBenefitType"></param>
+        /// <param name="id"></param>
+        /// <param name="title"></param>
+        /// <param name="description"></param>
         /// <param name="state">Possible values include: 'Active', 'Completed',
         /// 'Canceled', 'Started', 'DeadlineExceeded'</param>
+        /// <param name="deadline"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="updatedById"></param>
+        /// <param name="createdById"></param>
+        /// <param name="stateChangedAt"></param>
+        /// <param name="assignee"></param>
+        /// <param name="assignedActors"></param>
+        /// <param name="subject"></param>
+        /// <param name="type"></param>
+        /// <param name="relatedEntityId"></param>
+        /// <param name="reference"></param>
+        /// <param name="participants"></param>
+        /// <param name="relatedEntityType"></param>
         public TaskData(string sicknessBenefitType = default(string), System.Guid? id = default(System.Guid?), string title = default(string), string description = default(string), string state = default(string), System.DateTime? deadline = default(System.DateTime?), System.DateTime? createdAt = default(System.DateTime?), System.DateTime? updatedAt = default(System.DateTime?), string updatedById = default(string), string createdById = default(string), System.DateTime? stateChangedAt = default(System.DateTime?), IList<string> assignee = default(IList<string>), IList<AssignedActors> assignedActors = default(IList<AssignedActors>), string subject = default(string), int? type = default(int?), System.Guid? relatedEntityId = default(System.Guid?), Reference reference = default(Reference), IList<Participants> participants = default(IList<Participants>), int? relatedEntityType = default(int?))
         {
             SicknessBenefitType = sicknessBenefitType;

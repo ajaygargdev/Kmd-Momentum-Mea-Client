@@ -13,7 +13,7 @@ namespace Kmd.Momentum.Mea.Client
     /// <summary>
     /// Extension methods for InternalClient.
     /// </summary>
-    internal static partial class InternalClientExtensions
+    public static partial class InternalClientExtensions
     {
             /// <summary>
             /// Get all the  caseworkers

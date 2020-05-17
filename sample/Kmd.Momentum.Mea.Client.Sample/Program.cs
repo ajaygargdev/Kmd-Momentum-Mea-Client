@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Net.Http;
+using Kmd.Logic.Identity.Authorization;
 using Kmd.Momentum.Mea.Client.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Rest;
@@ -21,10 +23,9 @@ namespace Kmd.Momentum.Mea.Client.Sample
             try
             {
                 var config = new ConfigurationBuilder()
-                    .AddInMemoryCollection(new[]
-                    {
-                        KeyValuePair.Create("<dummy>", "must exist to avoid issues"),
-                    })
+                    .SetBasePath(AppContext.BaseDirectory)
+                    .AddJsonFile("appsettings.json", optional: false)
+                    .AddEnvironmentVariables()
                     .AddCommandLine(args)
                     .Build()
                     .Get<CommandLineConfig>();
@@ -79,18 +80,32 @@ namespace Kmd.Momentum.Mea.Client.Sample
 
         private static IInternalClient GetApi(CommandLineConfig config)
         {
-            if (string.IsNullOrEmpty(config.BearerToken))
+            if (config.MomentumApiBaseUri == null)
             {
-                throw new System.Exception("You must specify a bearer token with `--BearerToken={YourToken}`");
+                throw new System.Exception("You must specify a MomentumApiBaseUri");
             }
 
-            var credentials = new TokenCredentials(config.BearerToken);
-            var client = new InternalClient(credentials);
-
-            if (config.MomentumApiBaseUri != null)
+            var tokenProviderOptions = new LogicTokenProviderOptions
             {
-                client.BaseUri = config.MomentumApiBaseUri;
+                AuthorizationScope = config.TokenProvider.AuthorizationScope,
+                ClientId = config.TokenProvider.ClientId,
+                ClientSecret = config.TokenProvider.ClientSecret,
+                AuthorizationTokenIssuer = config.TokenProvider.AuthorizationTokenIssuer,
+            };
+
+            if (config.TokenProvider.AuthorizationTokenIssuer != null)
+            {
+                tokenProviderOptions.AuthorizationTokenIssuer = config.TokenProvider.AuthorizationTokenIssuer;
             }
+
+            var httpClient = new HttpClient();
+            var tokenProviderFactory = new LogicTokenProviderFactory(tokenProviderOptions);
+            var tokenProvider = tokenProviderFactory.GetProvider(httpClient);
+
+            var client = new InternalClient(new TokenCredentials(tokenProvider))
+            {
+                BaseUri = config.MomentumApiBaseUri,
+            };
 
             Log.Information("Created API with Base URI {BaseUri}", client.BaseUri);
             return client;
@@ -105,6 +120,12 @@ namespace Kmd.Momentum.Mea.Client.Sample
 
         private static void GetCaseworkerById(CommandLineConfig config)
         {
+            if (string.IsNullOrEmpty(config.CaseworkerId))
+            {
+                Log.Information("CaseworkerId is not mentioned", config.CaseworkerId);
+                throw new System.Exception("You must specify a CaseworkerId");
+            }
+
             var client = GetApi(config);
             var response = client.GetCaseworkerById(config.CaseworkerId);
             Log.Information("Got Caseworkers Details By Id", response);
@@ -112,6 +133,12 @@ namespace Kmd.Momentum.Mea.Client.Sample
 
         private static void GetTasksbyCaseworker(CommandLineConfig config)
         {
+            if (string.IsNullOrEmpty(config.CaseworkerId))
+            {
+                Log.Information("CaseworkerId is not mentioned", config.CaseworkerId);
+                throw new System.Exception("You must specify a CaseworkerId");
+            }
+
             var client = GetApi(config);
             var response = client.GetTasksbyCaseworker(config.CaseworkerId, config.PageNo);
             Log.Information("Got All Task For The Caseworkers", response);
@@ -119,6 +146,12 @@ namespace Kmd.Momentum.Mea.Client.Sample
 
         private static void GetCitizenByCpr(CommandLineConfig config)
         {
+            if (string.IsNullOrEmpty(config.CprNumber))
+            {
+                Log.Information("CaseworkerId is not mentioned", config.CprNumber);
+                throw new System.Exception("You must specify a CaseworkerId");
+            }
+
             var client = GetApi(config);
             var response = client.GetCitizenByCpr(config.CprNumber);
             Log.Information("Got Citizen in Momentum by CPR", response);
@@ -127,12 +160,18 @@ namespace Kmd.Momentum.Mea.Client.Sample
         private static void GetAllActiveCitizens(CommandLineConfig config)
         {
             var client = GetApi(config);
-            var response = client.GetAllActiveCitizens(config.PageNo);
+            var response = client.GetAllActiveCitizens(1);
             Log.Information("Got all active citizens", response);
         }
 
         private static void GetCitizenById(CommandLineConfig config)
         {
+            if (string.IsNullOrEmpty(config.CitizenId))
+            {
+                Log.Information("CitizenId is not mentioned", config.CitizenId);
+                throw new System.Exception("You must specify a CitizenId");
+            }
+
             var client = GetApi(config);
             var response = client.GetCitizenById(config.CitizenId);
             Log.Information("Got Citizen in Momentum by IDs", response);
@@ -145,6 +184,18 @@ namespace Kmd.Momentum.Mea.Client.Sample
                 TaskAction = config.TaskAction,
                 TaskContext = config.TaskContext,
             };
+
+            if (taskUpdateStatus == null)
+            {
+                Log.Information("Task Action and Task Context is not mentioned", config.TaskId);
+                throw new System.Exception("You must specify a Task Action and Task Context");
+            }
+
+            if (string.IsNullOrEmpty(config.TaskId))
+            {
+                Log.Information("TaskId is not mentioned", config.TaskId);
+                throw new System.Exception("You must specify a TaskId");
+            }
 
             var client = GetApi(config);
             var response = client.UpdateTaskStatus(taskUpdateStatus, config.TaskId);
@@ -177,6 +228,17 @@ namespace Kmd.Momentum.Mea.Client.Sample
                 Title = config.Title,
                 Type = config.Type,
             };
+            if (journalNoteRequestModel == null)
+            {
+                Log.Information("One or more JournalNoteDocumentRequestModel property is not mentioned", config.TaskId);
+                throw new System.Exception("You must specify a properties of JournalNoteDocumentRequestModel ");
+            }
+
+            if (string.IsNullOrEmpty(config.CitizenId))
+            {
+                Log.Information("CitizenId is not mentioned", config.CitizenId);
+                throw new System.Exception("You must specify a CitizenId");
+            }
 
             var client = GetApi(config);
             var response = client.CreateJournalNote(journalNoteRequestModel, config.CitizenId);

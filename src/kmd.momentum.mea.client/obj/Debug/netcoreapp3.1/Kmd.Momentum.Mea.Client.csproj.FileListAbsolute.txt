@@ -12,7 +12,6 @@ C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.c
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml
-C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.csprojAssemblyReference.cache
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfoInputs.cache
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.AssemblyInfo.cs
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\obj\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll

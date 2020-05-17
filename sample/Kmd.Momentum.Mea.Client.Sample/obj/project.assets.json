@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Kmd.Logic.Identity.Authorization/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.21",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Kmd.Logic.Identity.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Kmd.Logic.Identity.Authorization.dll": {}
+        }
+      },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
         "type": "package",
         "dependencies": {
@@ -72,6 +85,94 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4",
+          "Microsoft.Extensions.FileProviders.Physical": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.UserSecrets/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Json": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props": {},
+          "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.4",
+          "Microsoft.Extensions.FileSystemGlobbing": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.4": {
@@ -375,6 +476,19 @@
     }
   },
   "libraries": {
+    "Kmd.Logic.Identity.Authorization/2.0.0": {
+      "sha512": "yP6JTMyfo3k4qlFjGPuq9FbTXKEL7HT02TXVuT/9HGL4LwQg0A80OcLKkYPogZLH22avizpz1UD2l7V3DhbH4w==",
+      "type": "package",
+      "path": "kmd.logic.identity.authorization/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "kmd.logic.identity.authorization.2.0.0.nupkg.sha512",
+        "kmd.logic.identity.authorization.nuspec",
+        "lib/netstandard2.0/Kmd.Logic.Identity.Authorization.dll",
+        "lib/netstandard2.0/Kmd.Logic.Identity.Authorization.xml"
+      ]
+    },
     "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2": {
       "sha512": "/FET7my2lb3TfKZwP0VipAH19N8y2p7CRGLIxtRYXaBBpOoG0fDCWvF8IaOtipcgZ8/xFmFqVVxjmdEeZFEBBw==",
       "type": "package",
@@ -553,6 +667,118 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.xml",
         "microsoft.extensions.configuration.commandline.3.1.4.nupkg.sha512",
         "microsoft.extensions.configuration.commandline.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/3.1.4": {
+      "sha512": "hA9lDxkgeQSpsi0PWgRb0iX0FCuX1o+/sF36mfkSJORg1GROjrda9IzWbZeUsYyGUr6sCmK6Qge8cJEhcmlIsA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.environmentvariables/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "microsoft.extensions.configuration.environmentvariables.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
+      "sha512": "wgYJ6AxEuk7HkhUaiDwzX9LLVaeum5p8BS94xtMqgiCJ9Fxncy6z+jVHrkih+Ww6gBGbuPn5buu56MPWYlwBdg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/3.1.4": {
+      "sha512": "PYSg1spPvu5V+qk3gpLdIKa0VHURlIAv1uInxkmIXUYbb3AlBk6wywlbFFUWf+CRWA62eD/LJnfpePODlbQ5CA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.UserSecrets/3.1.4": {
+      "sha512": "cbUQmzKpLI5lJ5hL7ijeoZnw7hHerlWfC0wMI6BAzG6/Ily+exUHoM3SGR1838+JeJs0BzIarMPSsQiVKKMVQQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.usersecrets/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props",
+        "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.xml",
+        "microsoft.extensions.configuration.usersecrets.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.usersecrets.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.4": {
+      "sha512": "NNJA8JAoIaxlnb/bdQ8N0kA4T9ZaBAaUFM79pnT7j/x61Wne6K4lznU9u+NDgSAB3wrSx94mz169jNtle7KrSA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
+      "sha512": "vxBVwWxczp+5dnZ6FoulhxCLYzRjp5tu64iAlGMJtN0w7XLBZoY+6FvAnCRZDdwCbhVbz5VUPsbYVlL+l3sDxQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {
+      "sha512": "PGbPg8h8cUYXEovoeNvpHgdFhKnx/539E14zF1vxFz2V6cc1QmQGONbfVHEJcjbuyGyyiNyqgpPInymsVup7ow==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.4": {
@@ -1702,11 +1928,15 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Kmd.Logic.Identity.Authorization >= 2.0.0",
       "Kmd.Momentum.Mea.Client >= 1.0.0",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.2",
       "Microsoft.Extensions.Configuration >= 3.1.4",
       "Microsoft.Extensions.Configuration.Binder >= 3.1.4",
       "Microsoft.Extensions.Configuration.CommandLine >= 3.1.4",
+      "Microsoft.Extensions.Configuration.EnvironmentVariables >= 3.1.4",
+      "Microsoft.Extensions.Configuration.Json >= 3.1.4",
+      "Microsoft.Extensions.Configuration.UserSecrets >= 3.1.4",
       "Microsoft.Rest.ClientRuntime >= 2.3.21",
       "Serilog >= 2.9.0",
       "Serilog.Sinks.Console >= 3.1.1",
@@ -1721,11 +1951,11 @@
   "project": {
     "version": "0.1.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
+      "projectUniqueName": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
       "projectName": "Kmd.Momentum.Mea.Client.Sample",
-      "projectPath": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
+      "projectPath": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\Kmd.Momentum.Mea.Client.Sample.csproj",
       "packagesPath": "C:\\Users\\at00556551\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\obj\\",
+      "outputPath": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\sample\\Kmd.Momentum.Mea.Client.Sample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1747,8 +1977,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {
-              "projectPath": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj"
+            "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {
+              "projectPath": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj"
             }
           }
         }
@@ -1762,6 +1992,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Kmd.Logic.Identity.Authorization": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Kmd.Momentum.Mea.Client": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -1781,6 +2015,18 @@
             "version": "[3.1.4, )"
           },
           "Microsoft.Extensions.Configuration.CommandLine": {
+            "target": "Package",
+            "version": "[3.1.4, )"
+          },
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+            "target": "Package",
+            "version": "[3.1.4, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[3.1.4, )"
+          },
+          "Microsoft.Extensions.Configuration.UserSecrets": {
             "target": "Package",
             "version": "[3.1.4, )"
           },

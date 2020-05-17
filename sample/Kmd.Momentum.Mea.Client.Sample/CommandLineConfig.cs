@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Kmd.Logic.Identity.Authorization;
 using Kmd.Momentum.Mea.Client.Sample;
 
 namespace Kmd.Momentum.Mea.Client.Sample
 {
     public class CommandLineConfig
     {
-        public CommandLineAction Action { get; set; }
+        public LogicTokenProviderOptions TokenProvider { get; set; } = new LogicTokenProviderOptions();
 
-        public string BearerToken { get; set; }
+        public CommandLineAction Action { get; set; } = CommandLineAction.GetAllActiveCitizens;
 
-        public Uri MomentumApiBaseUri { get; set; }
+        public Uri MomentumApiBaseUri { get; set; } = new Uri("https://google.com");
 
-        public int PageNo { get; set; }
+        public int PageNo { get; set; } = 1;
 
         public string MomentumCitizenId { get; set; }
 

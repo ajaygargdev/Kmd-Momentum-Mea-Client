@@ -50,3 +50,11 @@ C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Me
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.pdb
 C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Kmd.Logic.Identity.Authorization.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\sample\Kmd.Momentum.Mea.Client.Sample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll

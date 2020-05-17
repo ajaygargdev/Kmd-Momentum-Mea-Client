@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {}
+    "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {
+    "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj",
+        "projectUniqueName": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj",
         "projectName": "Kmd.Momentum.Mea.Client",
-        "projectPath": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj",
+        "projectPath": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\Kmd.Momentum.Mea.Client.csproj",
         "packagesPath": "C:\\Users\\at00556551\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\at00556551\\source\\repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\obj\\",
+        "outputPath": "C:\\Users\\at00556551\\Source\\Repos\\Kmd-Momentum-Mea-Client2\\src\\kmd.momentum.mea.client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

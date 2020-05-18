@@ -21,7 +21,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll" />
-    <file src="D:\Repo\github\ajaygargdev\Kmd-Momentum-Mea-Client\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml" />
+    <file src="C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.dll" />
+    <file src="C:\Users\at00556551\Source\Repos\Kmd-Momentum-Mea-Client2\src\kmd.momentum.mea.client\bin\Debug\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml" target="lib\netcoreapp3.1\Kmd.Momentum.Mea.Client.xml" />
   </files>
 </package>

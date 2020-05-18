@@ -17,7 +17,7 @@ namespace Kmd.Momentum.Mea.Client
     using System.Threading;
     using System.Threading.Tasks;
 
-    internal partial class InternalClient : ServiceClient<InternalClient>, IInternalClient
+    public partial class InternalClient : ServiceClient<InternalClient>, IInternalClient
     {
         /// <summary>
         /// The base URI of the service.

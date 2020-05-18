@@ -913,6 +913,23 @@
             <summary>
             Initializes a new instance of the Assembly class.
             </summary>
+            <param name="definedTypes"></param>
+            <param name="exportedTypes"></param>
+            <param name="codeBase"></param>
+            <param name="entryPoint"></param>
+            <param name="fullName"></param>
+            <param name="imageRuntimeVersion"></param>
+            <param name="isDynamic"></param>
+            <param name="location"></param>
+            <param name="reflectionOnly"></param>
+            <param name="isCollectible"></param>
+            <param name="isFullyTrusted"></param>
+            <param name="customAttributes"></param>
+            <param name="escapedCodeBase"></param>
+            <param name="manifestModule"></param>
+            <param name="modules"></param>
+            <param name="globalAssemblyCache"></param>
+            <param name="hostContext"></param>
             <param name="securityRuleSet">Possible values include: 'None',
             'Level1', 'Level2'</param>
         </member>
@@ -1250,6 +1267,34 @@
             'MaxMethodImplVal'</param>
             <param name="callingConvention">Possible values include:
             'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+            <param name="isAbstract"></param>
+            <param name="isConstructor"></param>
+            <param name="isFinal"></param>
+            <param name="isHideBySig"></param>
+            <param name="isSpecialName"></param>
+            <param name="isStatic"></param>
+            <param name="isVirtual"></param>
+            <param name="isAssembly"></param>
+            <param name="isFamily"></param>
+            <param name="isFamilyAndAssembly"></param>
+            <param name="isFamilyOrAssembly"></param>
+            <param name="isPrivate"></param>
+            <param name="isPublic"></param>
+            <param name="isConstructedGenericMethod"></param>
+            <param name="isGenericMethod"></param>
+            <param name="isGenericMethodDefinition"></param>
+            <param name="containsGenericParameters"></param>
+            <param name="methodHandle"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.ConstructorInfo.MemberType">
             <summary>
@@ -1498,6 +1543,19 @@
             'NestedType', 'All'</param>
             <param name="attributes">Possible values include: 'None',
             'SpecialName', 'ReservedMask', 'ReservedMask'</param>
+            <param name="isSpecialName"></param>
+            <param name="addMethod"></param>
+            <param name="removeMethod"></param>
+            <param name="raiseMethod"></param>
+            <param name="isMulticast"></param>
+            <param name="eventHandlerType"></param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.EventInfo.MemberType">
             <summary>
@@ -1624,6 +1682,30 @@
             'NotSerialized', 'HasFieldRVA', 'SpecialName', 'RTSpecialName',
             'HasFieldMarshal', 'PinvokeImpl', 'HasDefault',
             'ReservedMask'</param>
+            <param name="fieldType"></param>
+            <param name="isInitOnly"></param>
+            <param name="isLiteral"></param>
+            <param name="isNotSerialized"></param>
+            <param name="isPinvokeImpl"></param>
+            <param name="isSpecialName"></param>
+            <param name="isStatic"></param>
+            <param name="isAssembly"></param>
+            <param name="isFamily"></param>
+            <param name="isFamilyAndAssembly"></param>
+            <param name="isFamilyOrAssembly"></param>
+            <param name="isPrivate"></param>
+            <param name="isPublic"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
+            <param name="fieldHandle"></param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.FieldInfo.MemberType">
             <summary>
@@ -1746,8 +1828,10 @@
             <summary>
             Initializes a new instance of the HealthReport class.
             </summary>
+            <param name="entries"></param>
             <param name="status">Possible values include: 'Unhealthy',
             'Degraded', 'Healthy'</param>
+            <param name="totalDuration"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReport.Entries">
             <summary>
@@ -1772,8 +1856,13 @@
             <summary>
             Initializes a new instance of the HealthReportEntry class.
             </summary>
+            <param name="data"></param>
+            <param name="description"></param>
+            <param name="duration"></param>
+            <param name="exception"></param>
             <param name="status">Possible values include: 'Unhealthy',
             'Degraded', 'Healthy'</param>
+            <param name="tags"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.HealthReportEntry.Data">
             <summary>
@@ -1834,7 +1923,11 @@
             <summary>
             Initializes a new instance of the JournalNoteRequestModel class.
             </summary>
+            <param name="cpr"></param>
+            <param name="title"></param>
             <param name="type">Possible values include: 'SMS', 'OTHER'</param>
+            <param name="body"></param>
+            <param name="documents"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.JournalNoteRequestModel.Cpr">
             <summary>
@@ -1869,6 +1962,13 @@
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="name"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.MemberInfo.MemberType">
             <summary>
@@ -1929,9 +2029,37 @@
             'MaxMethodImplVal'</param>
             <param name="callingConvention">Possible values include:
             'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+            <param name="isAbstract"></param>
+            <param name="isConstructor"></param>
+            <param name="isFinal"></param>
+            <param name="isHideBySig"></param>
+            <param name="isSpecialName"></param>
+            <param name="isStatic"></param>
+            <param name="isVirtual"></param>
+            <param name="isAssembly"></param>
+            <param name="isFamily"></param>
+            <param name="isFamilyAndAssembly"></param>
+            <param name="isFamilyOrAssembly"></param>
+            <param name="isPrivate"></param>
+            <param name="isPublic"></param>
+            <param name="isConstructedGenericMethod"></param>
+            <param name="isGenericMethod"></param>
+            <param name="isGenericMethodDefinition"></param>
+            <param name="containsGenericParameters"></param>
+            <param name="methodHandle"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.MethodBase.Attributes">
             <summary>
@@ -2090,6 +2218,9 @@
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="returnParameter"></param>
+            <param name="returnType"></param>
+            <param name="returnTypeCustomAttributes"></param>
             <param name="attributes">Possible values include: 'ReuseSlot',
             'ReuseSlot', 'Private', 'FamANDAssem', 'Assembly', 'Family',
             'FamORAssem', 'Public', 'MemberAccessMask', 'UnmanagedExport',
@@ -2105,6 +2236,34 @@
             'MaxMethodImplVal'</param>
             <param name="callingConvention">Possible values include:
             'Standard', 'VarArgs', 'Any', 'HasThis', 'ExplicitThis'</param>
+            <param name="isAbstract"></param>
+            <param name="isConstructor"></param>
+            <param name="isFinal"></param>
+            <param name="isHideBySig"></param>
+            <param name="isSpecialName"></param>
+            <param name="isStatic"></param>
+            <param name="isVirtual"></param>
+            <param name="isAssembly"></param>
+            <param name="isFamily"></param>
+            <param name="isFamilyAndAssembly"></param>
+            <param name="isFamilyOrAssembly"></param>
+            <param name="isPrivate"></param>
+            <param name="isPublic"></param>
+            <param name="isConstructedGenericMethod"></param>
+            <param name="isGenericMethod"></param>
+            <param name="isGenericMethodDefinition"></param>
+            <param name="containsGenericParameters"></param>
+            <param name="methodHandle"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.MethodInfo.MemberType">
             <summary>
@@ -2335,6 +2494,20 @@
             <param name="attributes">Possible values include: 'None', 'In',
             'Out', 'Lcid', 'Retval', 'Optional', 'HasDefault',
             'HasFieldMarshal', 'Reserved3', 'Reserved4', 'ReservedMask'</param>
+            <param name="member"></param>
+            <param name="name"></param>
+            <param name="parameterType"></param>
+            <param name="position"></param>
+            <param name="isIn"></param>
+            <param name="isLcid"></param>
+            <param name="isOptional"></param>
+            <param name="isOut"></param>
+            <param name="isRetval"></param>
+            <param name="defaultValue"></param>
+            <param name="rawDefaultValue"></param>
+            <param name="hasDefaultValue"></param>
+            <param name="customAttributes"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.ParameterInfo.Attributes">
             <summary>
@@ -2450,6 +2623,11 @@
             </summary>
             <param name="additionalProperties">Unmatched properties from the
             message are deserialized this collection</param>
+            <param name="type"></param>
+            <param name="title"></param>
+            <param name="status"></param>
+            <param name="detail"></param>
+            <param name="instance"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.ProblemDetails.AdditionalProperties">
             <summary>
@@ -2489,9 +2667,22 @@
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="propertyType"></param>
             <param name="attributes">Possible values include: 'None',
             'SpecialName', 'RTSpecialName', 'HasDefault', 'Reserved2',
             'Reserved3', 'Reserved4', 'ReservedMask'</param>
+            <param name="isSpecialName"></param>
+            <param name="canRead"></param>
+            <param name="canWrite"></param>
+            <param name="getMethod"></param>
+            <param name="setMethod"></param>
+            <param name="name"></param>
+            <param name="declaringType"></param>
+            <param name="reflectedType"></param>
+            <param name="module"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.PropertyInfo.MemberType">
             <summary>
@@ -2630,6 +2821,7 @@
             </summary>
             <param name="value">Possible values include: 'Sequential',
             'Explicit', 'Auto'</param>
+            <param name="typeId"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.StructLayoutAttribute.Value">
             <summary>
@@ -2650,8 +2842,26 @@
             <summary>
             Initializes a new instance of the TaskData class.
             </summary>
+            <param name="sicknessBenefitType"></param>
+            <param name="id"></param>
+            <param name="title"></param>
+            <param name="description"></param>
             <param name="state">Possible values include: 'Active', 'Completed',
             'Canceled', 'Started', 'DeadlineExceeded'</param>
+            <param name="deadline"></param>
+            <param name="createdAt"></param>
+            <param name="updatedAt"></param>
+            <param name="updatedById"></param>
+            <param name="createdById"></param>
+            <param name="stateChangedAt"></param>
+            <param name="assignee"></param>
+            <param name="assignedActors"></param>
+            <param name="subject"></param>
+            <param name="type"></param>
+            <param name="relatedEntityId"></param>
+            <param name="reference"></param>
+            <param name="participants"></param>
+            <param name="relatedEntityType"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.TaskData.SicknessBenefitType">
             <summary>
@@ -2820,9 +3030,36 @@
             <summary>
             Initializes a new instance of the Type class.
             </summary>
+            <param name="isInterface"></param>
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="namespaceProperty"></param>
+            <param name="assemblyQualifiedName"></param>
+            <param name="fullName"></param>
+            <param name="assembly"></param>
+            <param name="module"></param>
+            <param name="isNested"></param>
+            <param name="declaringType"></param>
+            <param name="declaringMethod"></param>
+            <param name="reflectedType"></param>
+            <param name="underlyingSystemType"></param>
+            <param name="isTypeDefinition"></param>
+            <param name="isArray"></param>
+            <param name="isByRef"></param>
+            <param name="isPointer"></param>
+            <param name="isConstructedGenericType"></param>
+            <param name="isGenericParameter"></param>
+            <param name="isGenericTypeParameter"></param>
+            <param name="isGenericMethodParameter"></param>
+            <param name="isGenericType"></param>
+            <param name="isGenericTypeDefinition"></param>
+            <param name="isSZArray"></param>
+            <param name="isVariableBoundArray"></param>
+            <param name="isByRefLike"></param>
+            <param name="hasElementType"></param>
+            <param name="genericTypeArguments"></param>
+            <param name="genericParameterPosition"></param>
             <param name="genericParameterAttributes">Possible values include:
             'None', 'Covariant', 'Contravariant', 'VarianceMask',
             'ReferenceTypeConstraint', 'NotNullableValueTypeConstraint',
@@ -2837,6 +3074,47 @@
             'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
             'StringFormatMask', 'HasSecurity', 'ReservedMask',
             'BeforeFieldInit', 'CustomFormatMask'</param>
+            <param name="isAbstract"></param>
+            <param name="isImport"></param>
+            <param name="isSealed"></param>
+            <param name="isSpecialName"></param>
+            <param name="isClass"></param>
+            <param name="isNestedAssembly"></param>
+            <param name="isNestedFamANDAssem"></param>
+            <param name="isNestedFamily"></param>
+            <param name="isNestedFamORAssem"></param>
+            <param name="isNestedPrivate"></param>
+            <param name="isNestedPublic"></param>
+            <param name="isNotPublic"></param>
+            <param name="isPublic"></param>
+            <param name="isAutoLayout"></param>
+            <param name="isExplicitLayout"></param>
+            <param name="isLayoutSequential"></param>
+            <param name="isAnsiClass"></param>
+            <param name="isAutoClass"></param>
+            <param name="isUnicodeClass"></param>
+            <param name="isCOMObject"></param>
+            <param name="isContextful"></param>
+            <param name="isEnum"></param>
+            <param name="isMarshalByRef"></param>
+            <param name="isPrimitive"></param>
+            <param name="isValueType"></param>
+            <param name="isSignatureType"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
+            <param name="structLayoutAttribute"></param>
+            <param name="typeInitializer"></param>
+            <param name="typeHandle"></param>
+            <param name="guid"></param>
+            <param name="baseType"></param>
+            <param name="isSerializable"></param>
+            <param name="containsGenericParameters"></param>
+            <param name="isVisible"></param>
+            <param name="name"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.Type.IsInterface">
             <summary>
@@ -3148,9 +3426,45 @@
             <summary>
             Initializes a new instance of the TypeInfo class.
             </summary>
+            <param name="genericTypeParameters"></param>
+            <param name="declaredConstructors"></param>
+            <param name="declaredEvents"></param>
+            <param name="declaredFields"></param>
+            <param name="declaredMembers"></param>
+            <param name="declaredMethods"></param>
+            <param name="declaredNestedTypes"></param>
+            <param name="declaredProperties"></param>
+            <param name="implementedInterfaces"></param>
+            <param name="isInterface"></param>
             <param name="memberType">Possible values include: 'Constructor',
             'Event', 'Field', 'Method', 'Property', 'TypeInfo', 'Custom',
             'NestedType', 'All'</param>
+            <param name="namespaceProperty"></param>
+            <param name="assemblyQualifiedName"></param>
+            <param name="fullName"></param>
+            <param name="assembly"></param>
+            <param name="module"></param>
+            <param name="isNested"></param>
+            <param name="declaringType"></param>
+            <param name="declaringMethod"></param>
+            <param name="reflectedType"></param>
+            <param name="underlyingSystemType"></param>
+            <param name="isTypeDefinition"></param>
+            <param name="isArray"></param>
+            <param name="isByRef"></param>
+            <param name="isPointer"></param>
+            <param name="isConstructedGenericType"></param>
+            <param name="isGenericParameter"></param>
+            <param name="isGenericTypeParameter"></param>
+            <param name="isGenericMethodParameter"></param>
+            <param name="isGenericType"></param>
+            <param name="isGenericTypeDefinition"></param>
+            <param name="isSZArray"></param>
+            <param name="isVariableBoundArray"></param>
+            <param name="isByRefLike"></param>
+            <param name="hasElementType"></param>
+            <param name="genericTypeArguments"></param>
+            <param name="genericParameterPosition"></param>
             <param name="genericParameterAttributes">Possible values include:
             'None', 'Covariant', 'Contravariant', 'VarianceMask',
             'ReferenceTypeConstraint', 'NotNullableValueTypeConstraint',
@@ -3165,6 +3479,47 @@
             'WindowsRuntime', 'UnicodeClass', 'AutoClass', 'StringFormatMask',
             'StringFormatMask', 'HasSecurity', 'ReservedMask',
             'BeforeFieldInit', 'CustomFormatMask'</param>
+            <param name="isAbstract"></param>
+            <param name="isImport"></param>
+            <param name="isSealed"></param>
+            <param name="isSpecialName"></param>
+            <param name="isClass"></param>
+            <param name="isNestedAssembly"></param>
+            <param name="isNestedFamANDAssem"></param>
+            <param name="isNestedFamily"></param>
+            <param name="isNestedFamORAssem"></param>
+            <param name="isNestedPrivate"></param>
+            <param name="isNestedPublic"></param>
+            <param name="isNotPublic"></param>
+            <param name="isPublic"></param>
+            <param name="isAutoLayout"></param>
+            <param name="isExplicitLayout"></param>
+            <param name="isLayoutSequential"></param>
+            <param name="isAnsiClass"></param>
+            <param name="isAutoClass"></param>
+            <param name="isUnicodeClass"></param>
+            <param name="isCOMObject"></param>
+            <param name="isContextful"></param>
+            <param name="isEnum"></param>
+            <param name="isMarshalByRef"></param>
+            <param name="isPrimitive"></param>
+            <param name="isValueType"></param>
+            <param name="isSignatureType"></param>
+            <param name="isSecurityCritical"></param>
+            <param name="isSecuritySafeCritical"></param>
+            <param name="isSecurityTransparent"></param>
+            <param name="structLayoutAttribute"></param>
+            <param name="typeInitializer"></param>
+            <param name="typeHandle"></param>
+            <param name="guid"></param>
+            <param name="baseType"></param>
+            <param name="isSerializable"></param>
+            <param name="containsGenericParameters"></param>
+            <param name="isVisible"></param>
+            <param name="name"></param>
+            <param name="customAttributes"></param>
+            <param name="isCollectible"></param>
+            <param name="metadataToken"></param>
         </member>
         <member name="P:Kmd.Momentum.Mea.Client.Models.TypeInfo.GenericTypeParameters">
             <summary>
